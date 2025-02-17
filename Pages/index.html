@@ -17,7 +17,8 @@
             <input type="text" id="search-input" placeholder="Search..." />
         </form>
 
-        <ul>
+        <button id="menu-toggle">☰</button>
+        <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">All Genres</a></li>
             <li><a href="#">New Releases</a></li>
@@ -170,32 +171,5 @@
     </div>
 </footer>
 
-<script>
-    // Search bar functionality
-    document.getElementById("search-input").addEventListener("keyup", function() {
-        let searchQuery = this.value.toLowerCase();
-        let books = document.querySelectorAll(".book-card, .genre-card");
-        books.forEach(book => {
-            let title = book.querySelector("h3").innerText.toLowerCase();
-            book.style.display = title.includes(searchQuery) ? "block" : "none";
-        });
-    });
-
-    // Star rating system
-    document.querySelectorAll(".rating span").forEach(star => {
-        star.addEventListener("click", function() {
-            let parent = this.parentElement;
-            let allStars = parent.querySelectorAll("span");
-            allStars.forEach(s => s.classList.remove("active"));
-            this.classList.add("active");
-            let index = Array.from(allStars).indexOf(this);
-            for (let i = 0; i <= index; i++) {
-                allStars[i].classList.add("active");
-            }
-        });
-    });
-</script>
-
-    <!--<script src="script.js"></script>-->
 </body>
 </html>

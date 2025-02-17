@@ -43,6 +43,14 @@ nav h1 a{
   text-decoration: none;
 }
 
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+
 /* Feed Section */
 #readingChallengeBanner img{
   height: 100%;
@@ -353,4 +361,26 @@ footer {
 .rating span:hover,
 .rating span.active {
   color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      padding: 10px;
+  }
+
+  nav ul.active {
+      display: flex;
+  }
+
+  #menu-toggle {
+      display: block;
+  }
 }

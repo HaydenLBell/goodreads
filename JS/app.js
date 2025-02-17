@@ -2,36 +2,33 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Like button functionality
-    const likeButtons = document.querySelectorAll('.like-btn');
-    likeButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-            let likeCount = this.querySelector('.like-count');
-            likeCount.textContent = parseInt(likeCount.textContent) + 1;
+    // Search bar functionality
+    document.getElementById("search-input").addEventListener("keyup", function() {
+        let searchQuery = this.value.toLowerCase();
+        let books = document.querySelectorAll(".book-card, .genre-card");
+        books.forEach(book => {
+            let title = book.querySelector("h3").innerText.toLowerCase();
+            book.style.display = title.includes(searchQuery) ? "block" : "none";
         });
     });
 
-    // Comment functionality
-    const commentButtons = document.querySelectorAll('.comment-btn');
-    commentButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const commentSection = this.nextElementSibling;
-            commentSection.style.display = commentSection.style.display === 'none' ? 'block' : 'none';
-        });
-    });
-
-    const submitButtons = document.querySelectorAll('.submit-comment');
-    submitButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const commentInput = this.previousElementSibling;
-            const commentList = this.nextElementSibling;
-            if (commentInput.value !== '') {
-                const newComment = document.createElement('p');
-                newComment.textContent = commentInput.value;
-                commentList.appendChild(newComment);
-                commentInput.value = '';
+    // Star rating system
+    document.querySelectorAll(".rating span").forEach(star => {
+        star.addEventListener("click", function() {
+            let parent = this.parentElement;
+            let allStars = parent.querySelectorAll("span");
+            allStars.forEach(s => s.classList.remove("active"));
+            this.classList.add("active");
+            let index = Array.from(allStars).indexOf(this);
+            for (let i = 0; i <= index; i++) {
+                allStars[i].classList.add("active");
             }
         });
     });
 
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    });
+
 });
+
