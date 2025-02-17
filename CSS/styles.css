@@ -1,0 +1,356 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: white;
+}
+
+nav {
+  background-color: #f1eaea;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #251A1A;
+  text-decoration: none;
+}
+
+nav h1{
+  padding-left: 30px;
+  color: #251A1A;
+}
+
+nav h1 a{
+  font-weight: 100;
+  color: #251A1A;
+  text-decoration: none;
+}
+
+/* Feed Section */
+#readingChallengeBanner img{
+  height: 100%;
+  width: 100%;
+}
+
+#feed h2{
+  font-size: 32px;
+}
+
+.post {
+  background-color: rgb(31, 31, 31);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.post p{
+  color: #d6d6d6
+};
+
+
+.post img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.like-btn, .comment-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #0073e6;
+  margin-right: 10px;
+}
+
+.comments {
+  margin-top: 1rem;
+  display: none;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-list {
+  margin-top: 0.5rem;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}
+
+
+/* Profile Section */
+
+/* Profile Section Styling */
+#profile {
+  background-color: rgb(31, 31, 31); /* You can change this to any background color */
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: center;
+ 
+
+  margin-left: 250px;
+  margin-right: 250px;
+}
+/*#profile {
+  background-color:  rgb(31, 31, 31);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+
+  margin-left: 250px;
+  margin-right: 250px;
+}*/
+
+#profile p{
+  color: #d6d6d6
+};
+
+
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-image img {
+  border-radius: 50%; /* Makes the image circular */
+  height: 100px;
+  width: 100px;
+  object-fit: cover; /* Ensures the image fits well in the circle */
+  margin-right: 50px;
+}
+
+.profile-image a {
+  margin-left:13px;
+  color: white;
+}
+.profile-image a:hover{
+  color: #660033;
+}
+
+
+
+
+
+/* Style for the search bar */
+#search-form {
+  display: inline-block;
+  position: relative;
+}
+
+#search-input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;  /* This creates the rounded effect */
+  border: 2px solid #480303;
+  width: 300px;
+  font-size: 16px;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  background-color: #e8e8e8;
+}
+
+#search-input:focus {
+  width: 400px;  /* Expand the search bar on focus */
+  border-color: #1f0610;
+}
+
+#search-form button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #25090a;
+  outline: none;
+}
+
+nav h1{
+  padding-left: 30px;
+}
+
+.postPage .like-btn{
+  margin-top:25px;
+ 
+}
+
+.timeline-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e7eb;
+  line-height: 30px
+}
+
+.timeline-header .userimage {
+  float: left;
+  width: 34px;
+  height: 34px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin: -2px 10px -2px 0
+}
+
+.timeline-header .username {
+  font-size: 16px;
+  font-weight: 600
+}
+
+.timeline-header .username,
+.timeline-header .username a {
+  color: #e7ecf0
+}
+
+ /* Container holding the image and the text */
+ .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150px, 55px);
+} 
+
+#genres {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  color: #000000;
+  text-align: center;
+}
+.genre-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  background: #f9f9f9;
+}
+.genre-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.genre-card h3 {
+  margin: 10px 0;
+  color: #000000;
+}
+.genre-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+footer {
+  background: #6a6966;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #e0d7d7;
+}
+.footer-section {
+  margin-bottom: 20px;
+}
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #eae4e4;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: #a89f9f;
+}
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #777;
+}
+.app-links img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+#featured-books {
+  padding: 25px 10%;
+  padding-bottom: 100px;
+  background: #f4f4f4;
+  text-align: center;
+}
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+}
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  padding: 15px;
+  text-align: center;
+}
+.book-card img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.book-card h3 {
+  margin: 10px 0;
+  color: black;
+}
+.book-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.rating span {
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+}
+.rating span:hover,
+.rating span.active {
+  color: gold;
+}
