@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: white;
-}
+} 
 
 nav {
   background-color: #f1eaea;
@@ -383,4 +383,35 @@ footer {
   #menu-toggle {
       display: block;
   }
+
+}
+#searchBar {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	}
+.GenContainer {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.genre {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
