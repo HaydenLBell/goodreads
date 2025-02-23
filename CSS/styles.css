@@ -415,3 +415,44 @@ footer {
     text-align: center;
     cursor: pointer;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container_b {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: rgb(36, 36, 36);
+}
+#searchBar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.genres {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.genre {
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.load-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
