@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodreads | Genres</title>
+    <title>Goodreads | FFFF</title>
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="icon" type="image/x-icon" href="/Resources/images/press.ico">
     <script src="/JS/app.js"></script> 
@@ -20,8 +20,8 @@
         <button id="menu-toggle">☰</button>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">All Genres</a></li>
-            <li><a href="#">New Releases</a></li>
+            <li><a href="genres.html">All Genres</a></li>
+            <li><a href="test.html">New Releases</a></li>
             <li><a href="profile.html">Log In</a></li>
             <li><a href="profile.html">Sign Up</a></li>
         </ul>
@@ -34,8 +34,55 @@
             <div class="centered"><a href ="#">Find out more</a></div>
           </div> 
     </section>
-	
-<section id="featured-books">
+
+    <section><h1 style = "color: black; text-align: center;">Genres</h1></section>
+    <section id="genres">
+        
+
+        <div class="genre-card">
+            <img src="images/fantasy.jpg" alt="">
+            <h3>Fantasy</h3>
+            <p>Escape to magical worlds filled with adventure and wonder.</p>
+        </div>
+        <div class="genre-card">
+            <img src="images/scifi.jpg" alt="">
+            <h3>Science Fiction</h3>
+            <p>Explore futuristic technology and the wonders of the universe.</p>
+        </div>
+        <div class="genre-card">
+            <img src="images/mystery.jpg" alt="">
+            <h3>Mystery</h3>
+            <p>Unravel thrilling whodunits and suspenseful stories.</p>
+        </div>
+        <div class="genre-card">
+            <img src="images/romance.jpg" alt="">
+            <h3>Romance</h3>
+            <p>Heartwarming love stories that will captivate your soul.</p>
+        </div>
+        <div class="genre-card">
+            <img src="images/horror.jpg" alt="">
+            <h3>Horror</h3>
+            <p>Spine-chilling tales that will keep you up at night.</p>
+        </div>
+        <div class="genre-card">
+            <img src="images/historical.jpg" alt="">
+            <h3>Historical Fiction</h3>
+            <p>Step back in time and experience history through stories.</p>
+        </div>
+        <div class="genre-card">
+            <img src="images/nonfiction.jpg" alt="">
+            <h3>Non-Fiction</h3>
+            <p>Gain knowledge with real stories and insightful facts.</p>
+        </div>
+        <div class="genre-card">
+            <img src="images/thriller.jpg" alt="">
+            <h3>Thriller</h3>
+            <p>Fast-paced, edge-of-your-seat action and suspense.</p>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section id="featured-books">
         <h2 style = "color: black;">Featured Books</h2>
         <div class="book-grid">
             <div class="book-card">
@@ -86,53 +133,43 @@
                     <span>&#9733;</span>
                 </div>
             </div>
-			<div class="book-card">
-                <img src="/Resources/images/catch.jpg" alt="Book 2">
-                <h3>Catcher in the Rye</h3>
-                <p>Here is a brief description.</p>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                </div>
-            </div>
-			<div class="book-card">
-                <img src="/Resources/images/one.jpg" alt="Book 2">
-                <h3>To kill a mocking bird</h3>
-                <p>Here is a brief description.</p>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                </div>
-            </div>
-			<div class="book-card">
-                <img src="/Resources/images/filth.jpg" alt="Book 2">
-                <h3>Filth</h3>
-                <p>Here is a brief description.</p>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                </div>
-            </div>
-			<div class="book-card">
-                <img src="/Resources/images/Train.jpg" alt="Book 2">
-                <h3>Trainspotting</h3>
-                <p>Here is a brief description.</p>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                </div>
-            </div>
         </div>
     </section>
+    
+
+   <!-- Footer -->
+   <footer>
+    <div class="footer-section">
+        <h3>COMPANY</h3>
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>WORK WITH US</h3>
+        <ul>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">API</a></li>
+        </ul>
+    </div>
+    <div class="footer-section social-icons">
+        <h3>CONNECT</h3>
+        <a href="#">🔵</a>
+        <a href="#">🐦</a>
+        <a href="#">📷</a>
+        <a href="#">🔗</a>
+    </div>
+    <div class="footer-section app-links">
+        <img src = "/Resources/images/appleandgoogleplay.png">
+        <!--<img src="images/appstore.png" alt="App Store">
+        <img src="images/googleplay.png" alt="Google Play">-->
+        <p>&copy; 2025 Goodreads, Inc.</p>
+    </div>
+</footer>
+
+</body>
+</html>
