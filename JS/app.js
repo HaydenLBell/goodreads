@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const genres = [
-        "Fantasy", "Science Fiction", "Mystery", "Thriller",
+        "Fiction", "Fantasy", "Science Fiction", "Mystery", "Thriller",
         "Romance", "Historical Fiction", "Horror", "Self-Help",
         "Biography", "Graphic Novel", "Young Adult", "Children's",
         "Adventure", "Dystopian", "Classic", "Crime",
@@ -43,13 +43,25 @@ document.addEventListener("DOMContentLoaded", function() {
     function displayGenres(limit) {
         if (!genreContainer) return;
         genreContainer.innerHTML = '';
+    
         genres.slice(0, limit).forEach(genre => {
             const div = document.createElement('div');
             div.className = 'genre';
-            div.textContent = genre;
+            //div.textContent = genre;
+            
+            // Create the link
+            const link = document.createElement("a");
+            link.href = `${genre}.html?genre=${encodeURIComponent(genre)}`;
+            link.textContent = genre; // Add text so it's clickable
+            
+            // Append link to div
+            div.appendChild(link);
+    
+            // Append div to container
             genreContainer.appendChild(div);
         });
     }
+    
 
     function filterGenres() {
         if (!searchBar || !genreContainer) return;
